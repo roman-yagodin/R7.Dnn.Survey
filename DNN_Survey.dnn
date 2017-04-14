@@ -105,7 +105,7 @@
                   <moduleControl>
                     <controlKey />
                     <controlSrc>DesktopModules/Survey/Survey.ascx</controlSrc>
-                    <supportsPartialRendering>False</supportsPartialRendering>
+                    <supportsPartialRendering>True</supportsPartialRendering>
                     <controlTitle />
                     <controlType>View</controlType>
                     <iconFile />
@@ -115,7 +115,8 @@
                   <moduleControl>
                     <controlKey>Edit</controlKey>
                     <controlSrc>DesktopModules/Survey/EditSurvey.ascx</controlSrc>
-                    <supportsPartialRendering>False</supportsPartialRendering>
+                    <supportsPartialRendering>True</supportsPartialRendering>
+                    <supportsPopUps>True</supportsPopUps>
                     <controlTitle>Create Survey</controlTitle>
                     <controlType>Edit</controlType>
                     <iconFile>Images/icon_survey_32px.gif</iconFile>
