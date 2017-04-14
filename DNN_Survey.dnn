@@ -1,0 +1,197 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="DNN_Survey" type="Module" version="04.70.01">
+      <friendlyName>Survey</friendlyName>
+      <description>Survey allows you to create custom surveys to obtain public feedback</description>
+      <owner>
+        <name>DotNetNuke Corporation</name>
+        <organization>DotNetNuke Corporation</organization>
+        <url>http://www.dotnetnuke.com</url>
+        <email>support@dotnetnuke.com</email>
+      </owner>
+      <license src="License.htm"/>
+      <releaseNotes src="ReleaseNotes.htm" />
+      <dependencies>
+        <dependency type="CoreVersion">05.05.01</dependency>
+      </dependencies>
+      <components>
+        <component type="Cleanup" version="04.70.00" fileName="04.70.00.txt" />
+      <component type="Config">
+	 <config>
+	    <configFile>web.config</configFile>
+	    <install>
+		<configuration>
+		   <nodes>
+		       <node path="configuration/system.web/compilation/codeSubDirectories/add[@directoryName='Survey']" action="remove" />
+		   </nodes>
+		</configuration>
+	    </install>
+	    <uninstall>
+		<configuration>
+		    <nodes />
+		</configuration>
+	    </uninstall>
+	  </config>
+        </component>
+        <component type="Script">
+          <scripts>
+            <basePath>DesktopModules\Survey</basePath>
+            <script type="Install">
+              <path>Providers\DataProviders\SqlDataProvider</path>
+              <name>03.01.00.SqlDataProvider</name>
+              <version>03.01.00</version>
+            </script>
+            <script type="Install">
+              <path>Providers\DataProviders\SqlDataProvider</path>
+              <name>03.03.00.SqlDataProvider</name>
+              <version>03.03.00</version>
+            </script>
+            <script type="Install">
+              <path>Providers\DataProviders\SqlDataProvider</path>
+              <name>04.00.20.SqlDataProvider</name>
+              <version>04.00.20</version>
+            </script>
+            <script type="Install">
+              <path>Providers\DataProviders\SqlDataProvider</path>
+              <name>04.00.60.SqlDataProvider</name>
+              <version>04.00.60</version>
+            </script>
+            <script type="Install">
+              <path>Providers\DataProviders\SqlDataProvider</path>
+              <name>04.00.70.SqlDataProvider</name>
+              <version>04.00.70</version>
+            </script>
+            <script type="Install">
+              <path>Providers\DataProviders\SqlDataProvider</path>
+              <name>04.00.85.SqlDataProvider</name>
+              <version>04.00.85</version>
+            </script>
+            <script type="Install">
+              <path>Providers\DataProviders\SqlDataProvider</path>
+              <name>04.01.00.SqlDataProvider</name>
+              <version>04.01.00</version>
+            </script>
+            <script type="Install">
+              <path>Providers\DataProviders\SqlDataProvider</path>
+              <name>04.50.00.SqlDataProvider</name>
+              <version>04.50.00</version>
+            </script>
+            <script type="Install">
+              <path>Providers\DataProviders\SqlDataProvider</path>
+              <name>04.60.00.SqlDataProvider</name>
+              <version>04.60.00</version>
+            </script>
+            <script type="UnInstall">
+              <path>Providers\DataProviders\SqlDataProvider</path>
+              <name>Uninstall.SqlDataProvider</name>
+              <version>4.70.0</version>
+            </script>
+          </scripts>
+        </component>
+        <component type="Module">
+          <desktopModule>
+            <moduleName>DNN_Survey</moduleName>
+            <foldername>Survey</foldername>
+            <businessControllerClass>DotNetNuke.Modules.Survey.SurveyBusinessController</businessControllerClass>
+            <supportedFeatures>
+              <supportedFeature type="Portable" />
+              <supportedFeature type="Searchable" />
+            </supportedFeatures>
+            <moduleDefinitions>
+              <moduleDefinition>
+                <friendlyName>Survey</friendlyName>
+                <defaultCacheTime>0</defaultCacheTime>
+                <moduleControls>
+                  <moduleControl>
+                    <controlKey />
+                    <controlSrc>DesktopModules/Survey/Survey.ascx</controlSrc>
+                    <supportsPartialRendering>False</supportsPartialRendering>
+                    <controlTitle />
+                    <controlType>View</controlType>
+                    <iconFile />
+                    <helpUrl>http://www.dotnetnuke.com/default.aspx?tabid=787</helpUrl>
+                    <viewOrder>0</viewOrder>
+                  </moduleControl>
+                  <moduleControl>
+                    <controlKey>Edit</controlKey>
+                    <controlSrc>DesktopModules/Survey/EditSurvey.ascx</controlSrc>
+                    <supportsPartialRendering>False</supportsPartialRendering>
+                    <controlTitle>Create Survey</controlTitle>
+                    <controlType>Edit</controlType>
+                    <iconFile>Images/icon_survey_32px.gif</iconFile>
+                    <helpUrl>http://www.dotnetnuke.com/default.aspx?tabid=787</helpUrl>
+                    <viewOrder>0</viewOrder>
+                  </moduleControl>
+                  <moduleControl>
+                    <controlKey>Settings</controlKey>
+                    <controlSrc>DesktopModules/Survey/Settings.ascx</controlSrc>
+                    <supportsPartialRendering>False</supportsPartialRendering>
+                    <controlTitle>Survey Settings</controlTitle>
+                    <controlType>Edit</controlType>
+                    <iconFile>Images/icon_survey_32px.gif</iconFile>
+                    <helpUrl>http://www.dotnetnuke.com/default.aspx?tabid=787</helpUrl>
+                    <viewOrder>0</viewOrder>
+                  </moduleControl>
+                </moduleControls>
+              </moduleDefinition>
+            </moduleDefinitions>
+          </desktopModule>
+          <eventMessage>
+            <processorType>DotNetNuke.Entities.Modules.EventMessageProcessor, DotNetNuke</processorType>
+            <processorCommand>UpgradeModule</processorCommand>
+            <attributes>
+              <businessControllerClass>DotNetNuke.Modules.Survey.SurveyBusinessController</businessControllerClass>
+              <desktopModuleID>[DESKTOPMODULEID]</desktopModuleID>
+              <upgradeVersionsList>03.01.00,03.03.00,04.00.20,04.00.60,04.00.70,04.00.85,04.01.00,04.50.00,04.60.00,04.70.00</upgradeVersionsList>
+            </attributes>
+          </eventMessage>
+        </component>
+        <component type="Assembly">
+          <assemblies>
+            <basePath>bin</basePath>
+            <assembly>
+              <name>DotNetNuke.Modules.Survey.dll</name>
+            </assembly>
+          </assemblies>
+        </component>
+        <component type="File">
+          <files>
+            <basePath>DesktopModules\Survey</basePath>
+            <file>
+              <path>App_LocalResources</path>
+              <name>EditSurvey.ascx.resx</name>
+            </file>
+            <file>
+              <path>App_LocalResources</path>
+              <name>Settings.ascx.resx</name>
+            </file>
+            <file>
+              <path>App_LocalResources</path>
+              <name>Survey.ascx.resx</name>
+            </file>
+            <file>
+              <path>Images</path>
+              <name>icon_survey_32px.gif</name>
+            </file>
+            <file>
+              <path>Images</path>
+              <name>red.gif</name>
+            </file>
+            <file>
+              <name>EditSurvey.ascx</name>
+            </file>
+            <file>
+              <name>module.css</name>
+            </file>
+            <file>
+              <name>Settings.ascx</name>
+            </file>
+            <file>
+              <name>Survey.ascx</name>
+            </file>
+          </files>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>

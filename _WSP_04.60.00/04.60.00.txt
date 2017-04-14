@@ -1,0 +1,12 @@
+bin\DotNetNuke.Modules.Survey.dll
+bin\DotNetNuke.Modules.Survey.SqlDataProvider.dll
+Install\Module\Survey_04.00.10_Install.resources
+Install\Module\Survey_04.00.20_Install.resources
+Install\Module\Survey_04.00.30_Install.resources
+Install\Module\Survey_04.00.40_Install.resources
+Install\Module\Survey_04.00.50_Install.resources
+Install\Module\Survey_04.00.60_Install.resources
+Install\Module\Survey_04.00.70_Install.resources
+Install\Module\Survey_04.00.85_Install.resources
+Install\Module\Survey_04.01.10_Install.resources
+Install\Module\Survey_04.50.00_Install.resources
