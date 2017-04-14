@@ -179,6 +179,22 @@
               <name>red.gif</name>
             </file>
             <file>
+              <path>Images</path>
+              <name>blue.gif</name>
+            </file>
+            <file>
+              <path>Images</path>
+              <name>green.gif</name>
+            </file>
+            <file>
+              <path>Images</path>
+              <name>orange.gif</name>
+            </file>
+            <file>
+              <path>Images</path>
+              <name>violet.gif</name>
+            </file>
+            <file>
               <name>EditSurvey.ascx</name>
             </file>
             <file>
