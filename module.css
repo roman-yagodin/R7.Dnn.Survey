@@ -13,3 +13,7 @@
 {
 
 }
+
+.surveyitems input[type="checkbox"], .surveyitems input[type="radio"] { margin-right:5px; }
+.surveyitems label { font-weight:normal; }
+.surveyitems > table { margin-top:10px; }
