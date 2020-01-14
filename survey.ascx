@@ -22,7 +22,7 @@
                     <ItemStyle CssClass="surveyitems" />
                 </asp:DataList>
                 <asp:LinkButton ID="cmdSubmit" runat="server" resourcekey="cmdSubmit" CssClass="CommandButton btn btn-primary">Submit Survey</asp:LinkButton>&nbsp;
-                <asp:LinkButton ID="cmdResults" runat="server" resourcekey="cmdResults" CssClass="CommandButton btn btn-default">View Results</asp:LinkButton></asp:Panel>
+                <asp:LinkButton ID="cmdResults" runat="server" resourcekey="cmdResults" CssClass="CommandButton btn btn-secondary">View Results</asp:LinkButton></asp:Panel>
             <asp:Label ID="Message_Label" runat="server" EnableViewState="False" CssClass="NormalBold"></asp:Label>
             <asp:Panel ID="pnlResults" runat="server" Visible="False">
                 <asp:DataList ID="lstResults" runat="server" CellPadding="4" DataKeyField="SurveyId"
@@ -37,7 +37,7 @@
                     </ItemTemplate>
                     <ItemStyle CssClass="surveyresultsitems" />
                 </asp:DataList>
-                <asp:LinkButton ID="cmdSurvey" runat="server" resourcekey="cmdSurvey" CssClass="CommandButton btn btn-default">View Survey</asp:LinkButton>
+                <asp:LinkButton ID="cmdSurvey" runat="server" resourcekey="cmdSurvey" CssClass="CommandButton btn btn-secondary">View Survey</asp:LinkButton>
             </asp:Panel>
         </td>
     </tr>
